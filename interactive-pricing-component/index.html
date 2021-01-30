@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Interactive Pricing Component</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="/img/favicon-32x32.png"/>
+    </head>
+    <body>
+        <div class="title-area">
+            <h1>Simple, traffic-based pricing</h1>
+            <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+        </div>
+        <section class="tbp">
+            <div class="tbp-top">
+                <p class="pageviews"><span id="views"></span> PAGEVIEWS</p>
+
+                <p class="price-a-month"><span class="dollar">$</span><span id="price"></span><span class="zero">.00</span> / month</p>
+            </div>
+            <input type="range" id="slider" step=25 value="0" min="0" max="100">
+            <div class="monthly-yearly">
+                <p>Monthly Billing</p>
+                <input type="checkbox" id="switch">
+                <label for="switch" class="switch-wrapper">
+                    <label for="switch" class="switch"></label>
+                </label>
+                <p>Yearly Billing <span class="dis25">25%discount</span><span class="mobile-dis25">-25%</span></p>
+            </div>
+            <hr>
+            <div class="bottom">
+                <ul class="checks">
+                    <li><img src="/img/icon-check.svg" alt=""> <p>Unlimited websites</p></li>
+                    <li><img src="/img/icon-check.svg" alt=""> <p>100% data ownership</p></li>
+                    <li><img src="/img/icon-check.svg" alt=""> <p>Email reports</p></li>
+                </ul>
+                <div class="cta"><p class="btn">Start my trial</p></div>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+    </body>
+</html>
