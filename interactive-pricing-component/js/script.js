@@ -1,14 +1,16 @@
-let slider = document.getElementById('slider');
-let pageviews = document.getElementById('views');
-let price = document.getElementById('price');
-let dis25 = document.getElementById('switch');
+const slider = document.getElementById('slider');
+const pageviews = document.getElementById('views');
+const price = document.getElementById('price');
+const dis25 = document.getElementById('switch');
 
+//Changing slider background depenfing on its value
 slider.style.background = 'linear-gradient(to right, #a5f3eb 0%, #a5f3eb 0%, #ecf0f9 0%, #ecf0f9 100%)';
 
 slider.addEventListener('input', function(e){
     slider.style.background = `linear-gradient(to right, #a5f3eb ${slider.value}%, #a5f3eb ${slider.value}%, #ecf0f9 0%, #ecf0f9 100%)`;
 });
 
+//Setting defaults
 pageviews.innerText="10k";
 price.innerHTML= 8.00;
 
